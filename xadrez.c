@@ -5,28 +5,36 @@
 // O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
 
 int main() {
-    // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
+// Declaração de variáveis
+int casas_torre = 5;
+int casas_bispo = 5;
+int casas_rainha = 8;
+int contador;
 
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
+// --- MOVIMENTO DA TORRE (Direita) ---
+// Utilizando a estrutura 'for' para movimento linear
+printf("--- Movimento da Torre ---\n");
+for (contador = 1; contador <= casas_torre; contador++) {
+printf("Direita\n");
+}
 
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
+// --- MOVIMENTO DO BISPO (Cima e Direita) ---
+// Utilizando a estrutura 'while' para movimento diagonal
+printf("\n--- Movimento do Bispo ---\n");
+contador = 1;
+while (contador <= casas_bispo) {
+printf("Cima, Direita\n");
+contador++;
+}
 
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
-
-    // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
-
-    // Nível Mestre - Funções Recursivas e Loops Aninhados
-    // Sugestão: Substitua as movimentações das peças por funções recursivas.
-    // Exemplo: Crie uma função recursiva para o movimento do Bispo.
-
-    // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
-    // Inclua o uso de continue e break dentro dos loops.
+// --- MOVIMENTO DA RAINHA (Esquerda) ---
+// Utilizando a estrutura 'do-while' para movimento horizontal
+printf("\n--- Movimento da Rainha ---\n");
+contador = 1;
+do {
+printf("Esquerda\n");
+contador++;
+} while (contador <= casas_rainha);
 
     return 0;
 }
